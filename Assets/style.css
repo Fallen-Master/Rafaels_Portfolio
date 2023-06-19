@@ -1,0 +1,52 @@
+
+/* color scheme sourced from http://khroma.co/generator/  */
+*{
+    padding: 0;
+    margin: 0;
+}
+html,
+body{
+    height: 100%;
+}
+
+body{
+ background-image: linear-gradient(
+         rgba( 34,151,253) 0,
+        rgba(71,71,77) 100%  
+    ); 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+h1{
+    position: fixed;
+    left: 0;
+    padding: 2rem;
+    border-radius: .5rem;
+    color: whitesmoke
+}
+.contact{
+    text-align: right;
+        text-decoration: none;
+}
+.contact ul{
+    list-style: none;
+}
+
+
+a{ 
+    text-decoration: none;
+    color: white;
+}
+header nav ul> li{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+}
