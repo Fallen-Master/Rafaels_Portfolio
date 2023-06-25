@@ -15,14 +15,15 @@ body{
         rgba(71,71,77) 100%  
     );  */
 
-    background-color: rgb(21,27,129); /*deep koamaru */
+    background-color:rgb(10, 110, 210) ; /*deep koamaru */
     color: white; /* cornflower blue
     tequila*/
+
 }
 
 header{
     position:fixed;
-   top: 0;
+    top: 0;
     left: 0;
     right: 0;
     display: flex;
@@ -30,7 +31,9 @@ header{
     align-items: center;
     height: 60px;
     padding: 0 1rem;
-    background-color: rgb(10, 110, 210);
+    background-color: rgb(21,27,129);
+
+
 
     /* flex-wrap: wrap; */
     /* align-items: center; */
@@ -45,9 +48,14 @@ h1{
     padding: 0;
     margin: 0px;
     display: flex;
+    font-size: 1.5rem;
 }
 .tab li{
     margin-left: 1rem;
+    padding: 0 2rem;
+    border: black solid .3rem;
+    border-radius: .5rem;
+    background-color: rgba(10, 110, 210, 0.44);
 }
 
 .tab li:first-child{
@@ -57,21 +65,28 @@ h1{
 .tab li.inline{
     display: inline;
 }
-.dog_human{
-    margin-top: 5rem;
-    width: 20%;
-    border-radius: .5rem;
-}
-
 
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
+
+
+.dog_human{
+    margin-top: 4rem;
+    width: 70%;
+    border-radius: 1rem;
+    height: auto;
+    border: solid gray 2px;
+}
+
+
+
 .about{
     text-align: center;
+    overflow: auto;
 }
 .compact-box {
     text-align: left;
@@ -88,11 +103,12 @@ main{
   .new {
     box-sizing: border-box;
     width: 100%;
-    max-width: 60rem;
+    max-width: 80rem;
     height: auto;
     margin-top: 20px;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 1rem;
   }
   
  
