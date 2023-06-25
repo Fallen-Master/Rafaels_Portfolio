@@ -66,11 +66,22 @@ h1{
     display: inline;
 }
 
-.content{
-    display: flex;
+main{
+    display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+}
+
+h2{ 
+    text-align: left;
+}
+
+.content{
+    width: 100%;
+    max-width: 80rem;
     margin-top: 2rem;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 
@@ -97,9 +108,7 @@ h1{
     background-color: 
         rgb(116,173,204);
   }
-main{
-    text-align: center;
-}
+
   .new {
     box-sizing: border-box;
     width: 100%;
