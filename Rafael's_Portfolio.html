@@ -29,20 +29,24 @@ The page needs to be able to be responsive to different view ports
             <h1> Rafael Gomez | Full-Stack Developer in training</h1>
                 <nav class="tab">
                     <ul> <!-- add links to these-->
-                        <li class="inline">Home</li>
-                        <li class="inline">Projects</li>
+                        <a href="#doggo"><li class="inline">Home</li></a>
+                        <a href="#about-me"><li class="inline">About Me</li></a>
+                        <a href="#project-link"><li class="inline">Projects</li></a>
                         <li class="inline">Contact me</li>
+                        
                     </ul>
                 </nav>   
         </header>
 
-        <main>
+        <main class="divider">
             <div>
-                <img class="dog_human" src="./Assets/Images/Ollie and I.jpg" alt="Dog and Human">
+                <a href="#about-me">
+                <img class="dog_human" id="doggo"  src="./Assets/Images/Ollie and I.jpg" alt="Dog and Human">
+             </a>
             </div>
             
             <div class="section">
-                <h2>About me</h2>
+                <h2 id="about-me">About me</h2>
                 <div class="divider">
                 <div class="content">
                     <div>
@@ -55,10 +59,13 @@ The page needs to be able to be responsive to different view ports
             </div>
 
             <section class="project">
-                <h2>Projects</h2>
+                <h2 id="project-link">Projects</h2>
                 <div class="divider">
-                    <figure>
-                        <img class="first-project-image" src="./Assets/Images/My_(kind of)New_Website.jpg">
+                    <figure class="space">
+                        <a href="https://fallen-master.github.io/My-New-Website/" target="_blank">
+                            <img class="first-project-image" 
+                            src="./Assets/Images/My_(kind of)New_Website.jpg">
+                        </a>
                         <figcaption class="first-project-description">
                             <h3>The first lesson I learned</h3>
                                 <p>This was the first website that I made, and it was supposed to be simple. I became so fixated on ensuring that the website looked like the example that I overlooked the presence of an available image. The centerpiece, where it says "COMING SOON," was intended to be an image.
@@ -69,27 +76,32 @@ The page needs to be able to be responsive to different view ports
                         </figcaption>
                     </figure>
                     
-
-                    
                         <div class="two-images-container">
                             <figure class="image-box">
-                                <img class="resize image_one" src="./Assets/Images/Horiseon.jpg" alt="Horiseon Refacto">
+                                <a href="https://fallen-master.github.io/Horiseon_refacto/" target="_blank">
+                                     <img class="resize image_one" 
+                                     src="./Assets/Images/Horiseon.jpg" alt="Horiseon Refacto">
+                                 </a>
                                 <figcaption>
                                     <h3>Horiseon Refacto</h3>
                                 </figcaption>
                             </figure>
                         
                             <figure class="image-box">
+                                <a href="https://fallen-master.github.io/prework-study-guide/" target="_blank">
                                 <img class="resize image_two" src="./Assets/Images/Prework_Study_Guide.jpg" alt="Pre-Work Study Guide">
+                                </a>
                                 <figcaption>
                                  <h3>Pre-Work Study Guide</h3>
                                 </figcaption>
                             </figure>
                         </div>
+                </div>
+                    
 
 
                    
-                </div>
+                
                 
             </section>
                   <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
@@ -103,6 +115,28 @@ The page needs to be able to be responsive to different view ports
                 </ul>
             </nav>-->
         </main>
+        <br> 
+        <br>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <br>
+            <br>
+            <form class="info">
+              <div class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required><br>
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br>
+              </div>
+              <div class="button">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </section>
+          
 
         <footer>
             
