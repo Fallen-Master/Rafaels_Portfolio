@@ -44,12 +44,12 @@ h1{
 }
 
 .tab{
-    list-style: none;
+    /* list-style: none; */
     padding: 0;
     margin: 0px;
     display: flex;
     font-size: 1.5rem;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 .tab li{
     margin-left: 1rem;
@@ -250,9 +250,24 @@ main{
     align-items: center;
   }
 
+
   .other-info{
-    display: inline-flex;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
+
+  .other-info li{
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    padding: 0 2rem;
+    border: solid .5rem black;
+    border-radius: .5rem;
+  }
+  
+
+
   @media (max-width: 390px) {
     header {
       flex-direction: column;
