@@ -7,39 +7,24 @@
         <link rel="stylesheet" href="./Assets/node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="./Assets/style.css">
     </head>
-<!-- Project Goals
-Developers Name and a recent photo. When you select the photo
-it goes the "about me section" and how to "contact"(Photo needs to be big)
-
-Links have to work on the Nav bar- They move you to corresponding section
-
-Projects section needs the "first project" to be bigger than the rest
-the links have to work for every project.
-
-The following projects need to be in card format.
-
-The page needs to be able to be responsive to different view ports
-
--->
-
 
     <body>
         
         <header>
             <h1> Rafael Gomez | Full-Stack Developer in training</h1>
                 <nav class="tab">
-                    <ul> <!-- add links to these-->
+                    <ul> 
                         <a href="#doggo"><li class="inline">Home</li></a>
                         <a href="#about-me"><li class="inline">About Me</li></a>
                         <a href="#project-link"><li class="inline">Projects</li></a>
-                        <li class="inline">Contact me</li>
+                        <a href="#type"><li class="inline">Contact me</li></a>
                         
                     </ul>
                 </nav>   
         </header>
 
         <main class="divider">
-            <div>
+            <div class="first">
                 <a href="#about-me">
                 <img class="dog_human" id="doggo"  src="./Assets/Images/Ollie and I.jpg" alt="Dog and Human">
              </a>
@@ -100,12 +85,12 @@ The page needs to be able to be responsive to different view ports
 
             </section>
            
-        </main>
+        
         <br> 
         <br>
 
         <section class="contact">
-            <h4>Contact Me</h4>
+            <h4 id="type">Contact Me</h4>
          
             <form class="info">
               <div class="name">
@@ -120,7 +105,6 @@ The page needs to be able to be responsive to different view ports
                 <input type="submit" value="Submit">
               </div>
             </form>
-            <div>
                 <nav class="other-info">
                     <ul>
                         <li class="inline">(316)371-9860</li>
@@ -130,10 +114,10 @@ The page needs to be able to be responsive to different view ports
                        <a href="https://www.linkedin.com/in/rafael-gomez-4a82317b/"><li class="inline">linkedin</li></a>
                     </ul>
                 </nav>
-            </div>
+        
           </section>
           
-
+        </main>
         <footer>
             
         </footer>
